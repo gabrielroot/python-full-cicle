@@ -1,0 +1,15 @@
+python -m venv .venv  --- Create a virtual environment in .venv directory
+
+source .venv/bin/activate  --- active the virtual environment   
+
+*Todos os pacotes que são instalados quando o virtualenv está ativado, são instalados para o projeto (pasta) e não para o sistema inteiro*
+
+deactivate  --- Stop de environment
+
+pip install -U pip setuptools  --- update the dependences of these packages
+
+pip install flask --- obviously, to install flask
+
+pip freeze --- list of all instaled dependencies
+
+pip install -r requirements-dev.txt --- install all dependencies listed in this file
