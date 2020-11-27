@@ -1,10 +1,5 @@
-from flask import Flask, jsonify
-
-app = Flask(__name__)
-
-@app.route('/')
-def home():
-    return jsonify({'message': 'work'})
+from training import create_app
 
 if __name__ == "__main__":
+    app = create_app()
     app.run()
