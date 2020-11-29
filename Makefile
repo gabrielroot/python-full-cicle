@@ -6,7 +6,7 @@ clean:
 
 pep8:
 	flake8 .
-	isort . -rc --check-only
+	isort --check-only
 
 migrate:
 	python manage.py db upgrade
