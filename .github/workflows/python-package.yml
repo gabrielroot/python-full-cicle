@@ -4,7 +4,7 @@
 name: test
 on: [push]
 jobs:
-  check-flake8&&isort:
+  check-flake_isort:
    runs-on: python:3.6.8-alpine
    steps:
     - run: python -V
