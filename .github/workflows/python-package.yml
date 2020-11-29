@@ -5,7 +5,7 @@ name: test
 on: [push]
 jobs:
   check-flake_isort:
-   runs-on: python:3.6.8-alpine
+   runs-on: python:3.6-buster
    steps:
     - run: python -V
     - run: apk add --no-cache --update gcc git openssh postgresql-dev musl-dev bash libxslt-dev libxml2-dev make
