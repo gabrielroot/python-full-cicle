@@ -5,7 +5,10 @@ name: test
 on: [push]
 jobs:
   check-flake_isort:
-   runs-on: python:3.6-buster
+   runs-on: ubuntu-latest
+   strategy:
+     matrix:
+       python-version: [3.6]
    steps:
     - run: python -V
     - run: apk add --no-cache --update gcc git openssh postgresql-dev musl-dev bash libxslt-dev libxml2-dev make
