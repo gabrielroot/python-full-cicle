@@ -7,6 +7,7 @@ class Config:
     TIMEZONE = config('TIMEZONE', default='America/Sao_Paulo')
 
     SQLALCHEMY_DATABASE_URI = config('SQLALCHEMY_DATABASE_URI')
+    SQLALCHEMY_TRACK_MODIFICATIONS = False
 
     LOGGING = {
         'version': 1,
@@ -15,7 +16,7 @@ class Config:
             'standard': {
                 'format': '[%(asctime)s][%(levelname)s] %(name)s '
                 '%(filename)s:%(funcName)s:%(lineno)d | %(message)s',
-                'datefmt': '%Y-%m-%d %H:%M:%s'
+                'datefmt': '%Y-%m-%d %H:%M:%S'
             },
         },
         'handlers': {
